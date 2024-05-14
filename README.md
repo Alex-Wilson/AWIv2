@@ -1,2 +1,8 @@
 # AWIv2
-Updating the existing website at alexwilson.info. I plan to transition to this project once it is in a stable state. 
+This will be the official github repository for alexwilson.info
+
+
+TODO:
+Database
+HTTPS support
+Finish All Routes for Resumes

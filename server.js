@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
-
 const indexRouter = require('./routes/index');
+const mongoose = require('mongoose')
+const PORT = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views')
@@ -15,5 +16,4 @@ app.use(express.static('public'))
 app.use('/', indexRouter)
 
 
-const PORT = process.env.PORT || 3000;
-app.listen(process.env.PORT || 3000);
+app.listen(PORT);
